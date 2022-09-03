@@ -33,4 +33,4 @@
 
 ## Authors
 * Akande Abayomi [AbyPaul9]  (https:/github.com/AbyPaul9)
-* Chris Olatunji [chrisade]  (https:/github.com/chrisade)
+* Chris Olatunji [Chris-ade]  (https:/github.com/Chris-ade)
