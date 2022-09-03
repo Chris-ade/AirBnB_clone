@@ -1,23 +1,18 @@
 # /usr/bin/python3
-""" 
-Class Modules
-"""
+""" Class Modules """
 from datetime import datetime
 from uuid import uuid4
 import models
 
+
 class BaseModel:
-    """ 
-    Class BaseModel 
-    """
+    """ Class BaseModel """
     id = str(uuid4())
     created_at = datetime.now()
     updated_at = datetime.now()
 
     def __init__(self, *args, **kwargs):
-        """ 
-        Building Class 
-        """
+        """ Building Class """
         if (len(kwargs) is not 0):
             for key, value in kwargs.items():
                 if (key == 'id'):
@@ -35,9 +30,7 @@ class BaseModel:
             models.storage.new(self)
 
     def __str__(self):
-        """ 
-        String Method 
-        """
+        """ String Method """
         return ("[{self.__class__.__name__}] ({}) {}"
                 .format(self.id, self.__dict__, self=self))
 
@@ -46,9 +39,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """ 
-        Returns a Dictionary 
-        """
+        """ Returns a Dictionary """
         new_dict = self.__dict__.copy()
         new_dict['created_at'] = self.created_at.isoformat()
         new_dict['updated_at'] = self.updated_at.isoformat()
