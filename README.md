@@ -30,3 +30,7 @@
 
 ## Environment
 * Language: Python3 Style guidelines: PEP8
+
+## Authors
+* Akande Abayomi [AbyPaul9]  (https:/github.com/AbyPaul9)
+* Chris Olatunji [chrisade]  (https:/github.com/chrisade)
