@@ -12,6 +12,7 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
+
 class HBNBCommand(cmd.Cmd):
     """Console that emulate AirBNB"""
     prompt = '(hbnb) '
@@ -182,7 +183,7 @@ class HBNBCommand(cmd.Cmd):
         return(args)
 
     def default(self, line):
-        """ Dafault function """
+        """ Default function """
         split_line = line.split('.')
         if len(split_line) > 1:
             if split_line[1] == "count()":
