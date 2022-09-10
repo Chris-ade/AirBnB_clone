@@ -24,7 +24,6 @@
 }
 
 .places article h2 {
-
 	font-size: 30px;
 	width: auto;
 	margin-right: auto;
@@ -42,7 +41,9 @@
 	height: 60px;
 	font-size: 30px;
 	text-align: center;
-	line-height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .places article div.information {
 	width: 100%;
@@ -61,7 +62,7 @@ div.information div.max_guest, div.information div.number_rooms, div.information
 	background-position: center top;
 	margin: 4px auto;
 	text-align: center;
-	line-height: 9em;
+	line-height: 11em;
 }
 div.information div.max_guest {
 	background-image: url(../images/icon_group.png);
